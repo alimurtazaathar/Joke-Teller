@@ -30,7 +30,7 @@ function tellJoke(joke)
 async function getJoke()
 {   
     let joke='';
-    const apiUrl='https://v2.jokeapi.dev/joke/Dark';    
+    const apiUrl='https://v2.jokeapi.dev/joke/Programming?blacklistFlags=nsfw,religious,political,racist,sexist,explicit';    
     try {
         const response=await fetch(apiUrl);
         const data=await response.json();
